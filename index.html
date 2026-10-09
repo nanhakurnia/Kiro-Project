@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nana Kurniasih — Guru Produktif Desain Komunikasi Visual. Menumbuhkan kreativitas dan karya visual melalui pembelajaran yang inspiratif." />
+    <meta name="author" content="Nana Kurniasih" />
+    <title>Nana Kurniasih — Guru Produktif Desain Komunikasi Visual</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+    <!-- Animated gradient / particle background -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="Beranda Nana Kurniasih">
+                <span class="logo-mark">NK</span>
+                <span class="logo-text">Nana<span class="accent">.</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+                <a href="#hero" class="nav-link active">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Keahlian</a>
+                <a href="#projects" class="nav-link">Karya</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+                <a href="#contact" class="btn btn-sm btn-primary nav-cta">Hubungi Saya</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section class="hero section" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-content reveal">
+                    <span class="badge">
+                        <span class="pulse-dot"></span>
+                        Terbuka untuk kolaborasi
+                    </span>
+
+                    <h1 class="hero-title">
+                        Halo, saya <span class="gradient-text">Nana Kurniasih</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+
+                    <p class="hero-tagline">
+                        Menumbuhkan kreativitas dan karya visual melalui pembelajaran yang inspiratif.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            Lihat Karya
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a href="assets/files/nana-kurniasih-cv.pdf" class="btn btn-ghost" download>
+                            Unduh CV
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://instagram.com/nanha_kurnia" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.33-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.38.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.33.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.33.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.71a2.85 2.85 0 0 0-.69-1.06 2.85 2.85 0 0 0-1.06-.69c-.33-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07Zm0 3.06a4.98 4.98 0 1 1 0 9.96 4.98 4.98 0 0 1 0-9.96Zm0 8.22a3.24 3.24 0 1 0 0-6.48 3.24 3.24 0 0 0 0 6.48Zm6.34-8.42a1.16 1.16 0 1 1-2.32 0 1.16 1.16 0 0 1 2.32 0Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="avatar-wrap">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-ring"></div>
+                        <div class="avatar">
+                            <img src="assets/fotonana.jpeg" alt="Nana Kurniasih" class="avatar-img" width="360" height="360" loading="eager" />
+                        </div>
+                        <div class="float-chip chip-1">🎨 Desain Grafis</div>
+                        <div class="float-chip chip-2">✎ DKV</div>
+                        <div class="float-chip chip-3">◆ Kreatif</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Gulir ke bawah">
+                <span class="mouse"><span class="wheel"></span></span>
+            </a>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="section-tag">01 — Tentang</span>
+                    <h2 class="section-title">Kenali <span class="gradient-text">saya</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-bio reveal">
+                        <div class="glass-card">
+                            <p class="bio-lead">
+                                Nana Kurniasih adalah seorang Guru Produktif Desain Komunikasi Visual
+                                yang berdedikasi menumbuhkan kreativitas dan kemampuan visual para siswa.
+                            </p>
+                            <p class="bio-text">
+                                Ia berfokus pada pembelajaran yang inspiratif, membimbing siswa menguasai
+                                desain grafis, ilustrasi, tipografi, dan branding, serta mendorong mereka
+                                menghasilkan karya visual yang bermakna dan siap bersaing di dunia industri kreatif.
+                            </p>
+
+                            <ul class="about-highlights">
+                                <li><span class="hl-icon">🎨</span> Mengajar Desain Komunikasi Visual yang aplikatif</li>
+                                <li><span class="hl-icon">�‍🏫</span> Membimbing siswa berkarya secara kreatif</li>
+                                <li><span class="hl-icon">💡</span> Pembelajaran inspiratif dan berbasis proyek</li>
+                                <li><span class="hl-icon">�</span> Mendorong karya siswa siap industri kreatif</li>
+                            </ul>
+
+                            <div class="about-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">Lokasi</span>
+                                    <span class="meta-value">Indonesia</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Instagram</span>
+                                    <a class="meta-value" href="https://instagram.com/nanha_kurnia" target="_blank" rel="noopener">@nanha_kurnia</a>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Profesi</span>
+                                    <span class="meta-value">Guru Produktif DKV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats reveal">
+                        <div class="glass-card stat-card">
+                            <span class="stat-number" data-target="8" data-suffix="+">0</span>
+                            <span class="stat-label">Tahun Mengajar</span>
+                        </div>
+                        <div class="glass-card stat-card">
+                            <span class="stat-number" data-target="300" data-suffix="+">0</span>
+                            <span class="stat-label">Siswa Dibimbing</span>
+                        </div>
+                        <div class="glass-card stat-card">
+                            <span class="stat-number" data-target="50" data-suffix="+">0</span>
+                            <span class="stat-label">Karya Siswa</span>
+                        </div>
+                        <div class="glass-card stat-card">
+                            <span class="stat-number" data-target="15" data-suffix="+">0</span>
+                            <span class="stat-label">Penghargaan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

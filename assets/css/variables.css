@@ -1,0 +1,64 @@
+/* ============================================================
+   Design Tokens — Dark Modern Developer Portfolio
+   ============================================================ */
+:root {
+    /* Core palette */
+    --bg-0: #060814;
+    --bg-1: #0a0e1f;
+    --bg-2: #0e1428;
+    --surface: rgba(255, 255, 255, 0.04);
+    --surface-strong: rgba(255, 255, 255, 0.07);
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
+
+    /* Text */
+    --text: #e8ecf6;
+    --text-soft: #aab2c8;
+    --text-dim: #6b7490;
+
+    /* Accents */
+    --accent: #7c5cff;        /* violet */
+    --accent-2: #19e3cf;      /* teal   */
+    --accent-3: #ff6ad5;      /* pink   */
+    --accent-glow: rgba(124, 92, 255, 0.55);
+    --accent-2-glow: rgba(25, 227, 207, 0.45);
+
+    /* Gradients */
+    --grad-primary: linear-gradient(135deg, #7c5cff 0%, #19e3cf 100%);
+    --grad-text: linear-gradient(120deg, #a78bff 0%, #19e3cf 60%, #7c5cff 100%);
+    --grad-soft: linear-gradient(135deg, rgba(124,92,255,0.18), rgba(25,227,207,0.12));
+
+    /* Typography */
+    --font-display: 'Sora', system-ui, sans-serif;
+    --font-body: 'Space Grotesk', system-ui, sans-serif;
+
+    /* Spacing scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.75rem;
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+    --space-2xl: 8rem;
+
+    /* Radius */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
+
+    /* Shadows & glow */
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 40px var(--accent-glow);
+    --shadow-card: 0 20px 60px rgba(2, 4, 16, 0.55);
+
+    /* Motion */
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --dur-fast: 0.25s;
+    --dur: 0.45s;
+    --dur-slow: 0.8s;
+
+    /* Layout */
+    --container: 1180px;
+    --nav-h: 76px;
+}
